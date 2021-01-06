@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+  window.onload = function()
+  { 
+    //adding the event listerner for Mozilla
+    if(window.addEventListener)
+      document.addEventListener('wheel', moveObject, false);
+  }
+  function moveObject(event) {
+
+    document.body.innerHTML += "Scrolled " + event.wheelDelta + "<br>"; 
+  }
+  
+</script>
+</head>
+<body style="height:20000px">
+
+</body>
+
+</html>
